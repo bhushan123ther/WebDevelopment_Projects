@@ -1,0 +1,310 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+ }
+ #nav 
+ {
+     width: 100%;
+     height: 60px;
+     background-color: rgb(172, 221, 218);
+     box-shadow: 0px 0px 10px 6px black;
+     padding: 0 100px;
+     line-height: 60px;
+     top:0px;
+     bottom: 0px; 
+     position: fixed;
+     z-index: 10;
+ }
+ .left-ul li
+ {
+    float: left;
+    list-style: none;
+ }
+ .right-ul li
+ {
+     float:right;
+     list-style: none;
+ }
+ .left-ul li a
+ {
+    text-decoration: none;
+    font-size: 30px;
+ }
+ .left-ul li a:hover
+ {
+    color: green;
+ }
+ .right-ul li 
+ {
+    text-decoration: none;
+    color: black; 
+    padding: 0 15px;
+    line-height: 60px;
+    display: block;
+ }
+ .right-ul li :hover
+ {
+    background-color: rgb(236, 239, 243);
+    color: rgb(49, 90, 49);
+    border-radius: 60px;
+ } 
+
+ #banner
+ {
+     width: 100%;
+     height: 100vh;
+     background-image: url(../Images/jobbb.jpg);
+     background-size: cover;
+ }
+ .banner-text
+ {
+     position: absolute;
+     top:20%;
+     left:15%;
+ }
+ .banner-text h1
+ {
+     font-size: 50px;
+     text-transform: uppercase;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .banner-text p
+ {
+     margin: 10px 5px;
+ }
+ .banner-btn
+ {
+      margin-top: 20px;
+ }
+ .btn
+ {
+    color: black;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(23, 119, 23);
+    cursor: pointer;
+ }
+ .btn:hover
+ {
+     background-color: rgb(212, 84, 25);
+ }
+ .btn-default
+ {
+     background-color: green;
+ }
+ .btn-intro
+ {
+     background-color: orange;
+ }
+ #description
+ {
+     padding: 60px 0px;
+ }
+ .container
+ {
+     padding: 0px 100px;
+ }
+ #description h1
+ {
+     font-size: 30px;
+     font-weight: bolder;
+     line-height: 50px;
+     text-align: center;
+ }
+ #description p
+ {
+     font-size: 20px;
+     text-align: center;
+ }
+ .desc-btn
+ {
+     margin-top: 20px;
+     text-align: center;
+ }
+ .row
+ {
+     width: 100%;
+ }
+ .col-6
+ {
+     width: 50%;
+     float: left;
+ }
+ .intro-text
+ {
+     width: 100%;
+     height: 500px;
+     padding: 20px 50px;
+     line-height: 30px;
+     text-decoration: none;
+     
+ }
+ #web-intro h2
+ {
+     padding: 30px 0px 10px 0px;  
+ }
+ .intro-text h1
+ {
+       padding: 20px 30px;
+ }
+ .intro-text p
+ {
+     font-size: 20px;
+ }
+ .intro-text ul li a
+ {
+     text-decoration: none;
+     font-size: 20px;
+ }
+
+ #services
+ {
+     padding: 50px 0;
+     margin-top: 80px;
+ }
+ .col-4
+ {
+     width: 25%;
+     float: left;
+     text-align: center;
+     padding: 20px;
+ }
+ .service-icon
+ {
+     text-align: center;
+ }
+ .service-icon i
+ {
+     width: 80px;
+     height: 80px;
+     border: 1px solid rgb(158, 150, 150) ;
+     line-height: 80px;
+     border-radius: 50%;
+     font-size: 30px;
+ }
+ .service-icon i:hover
+ {
+     box-shadow: 0px 0px 5px 3px rgb(109, 109, 172);
+     cursor: pointer;
+ }
+ .service-heading
+ {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 20px;
+ }
+ .service-subheading
+ {
+     margin-top: 20px;
+ }
+ .service-subpara
+ {
+     margin-top: 15px;
+     font-size: 20px;
+ }
+
+ #contactform
+ {
+     margin: 30px 0px;
+ }
+ .contactform-header h2
+ {
+      margin-top: 40px;
+      line-height: 50px;
+      text-decoration: underline;
+      font-style: bold;
+ }
+ .contactform-header
+ {
+     line-height: 30px;
+ }
+ .contactform-header p{
+     line-height: 50px;
+ }
+ .form-group
+ {
+   margin-top: 50px; 
+  
+ }
+ .textfield-design
+ {
+     width: 300px;
+     line-height: 10px;
+     border: 1px solid rgb(100, 100, 148);
+     border-radius: 10px;
+     padding: 7px 10px;
+ }
+ .textarea-design
+ {
+     width: 300px;
+     height: 100px;
+     border: 1px solid rgb(117, 117, 179);
+     border-radius: 10px;
+     cursor: pointer;
+ }
+ .btn-send
+ {
+     background-color: rgb(161, 38, 38);
+ }
+ .toggle
+ {
+     position: fixed;
+     z-index: 20;
+     width: 40px;
+     height: 40px;
+     font-size: 40px;
+     line-height: 40px;
+     cursor: pointer;
+     margin-top: 10px;
+     text-align: center;
+     border: 1px solid black;
+     border-radius: 50%;
+     right: 30px;
+     display: none;
+     
+ }
+@media screen and (max-width: 830px)
+{
+    .toggle
+    {
+        display: block;
+    }
+    #nav
+    {
+        padding: 0 0;
+    }
+    .left-ul li
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .right-ul li 
+    {
+        float: none;
+        display: block;    
+    }
+    .right-ul li a
+    {
+        background-color: rgb(172, 221, 218);;
+    }
+
+    .col-4
+    {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .col-6
+    {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .service-heading h1
+    {
+        margin: 80px 0px 0px 0px;
+    }
+} 
